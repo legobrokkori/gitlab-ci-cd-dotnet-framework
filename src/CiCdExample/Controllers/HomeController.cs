@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using ClassLibrary1;
 
 namespace CiCdExample.Controllers
 {
@@ -7,6 +8,8 @@ namespace CiCdExample.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+
+            var node = new ListNode();
 
             return View();
         }
